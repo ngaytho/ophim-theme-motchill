@@ -25,6 +25,7 @@
                                     <h1 class="title">{{ $section_name }}</h1>
                                 </div>
                         </div>
+                        <br />
                         <div id="myui-vodlist clearfix" class="film-list" role="list">
                             @foreach ($data as $key => $movie)
                                 @php
