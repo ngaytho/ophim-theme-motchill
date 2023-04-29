@@ -31,7 +31,7 @@
                                         />
                                         
                                     <button class="submit search_submit icon-btn" id="searchbutton" type="submit" name="submit">
-                                        <svg><use xlink:href="/static/sprite.svg#icon-search"></use></svg>
+                                        <svg><use xlink:href="/themes/motchill/static/sprite.svg#icon-search"></use></svg>
                                     </button>
                                 </form>
                                 <div class="search-dropdown-hot dropdown-box bottom fadeInDown"></div>
