@@ -16,6 +16,7 @@
         }
         #pagination > li.active > .page-link {
             background: #222222 ;
+            border: 1px solid #444444;
         }
     </style>
 
