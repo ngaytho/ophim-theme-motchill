@@ -5189,7 +5189,7 @@ a.btn.btn-default.active {
   content: "−";
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 813px) {
   .m-nav, .m-nav-over {
     display: none !important;
   }
