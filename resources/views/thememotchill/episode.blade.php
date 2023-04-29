@@ -303,7 +303,7 @@
                         key: "{{ Setting::get('jwplayer_license') }}",
                         aspectratio: "16:9",
                         width: "100%",
-                        file: "/themes/ripple/player/1s_blank.mp4",
+                        file: "/themes/motchill/static/player/1s_blank.mp4",
                         volume: 100,
                         mute: false,
                         autostart: true,

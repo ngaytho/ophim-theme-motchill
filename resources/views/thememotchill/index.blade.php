@@ -75,11 +75,9 @@
 
 @endphp
 
-@section('slider_recommended')
-    {{-- @include('themes::thememotchill.inc.slider_recommended') --}}
-@endsection
-
 @section('content')
+    @include('themes::thememotchill.inc.slider_recommended')
+
     <div class="row">
         <div class="col-md-wide-7 col-xs-1 padding-0">
             @foreach ($data as $item)
