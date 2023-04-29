@@ -103,7 +103,7 @@
                             </div>
 
                             @if ($currentMovie->showtimes && $currentMovie->showtimes != '')
-                                <div class="myui-player__notice">Lịch chiếu: {!! $currentMovie->showtimes !!}</div>
+                                <div class="myui-player__notice">Lịch chiếu: {!! strip_tags($currentMovie->showtimes) !!}</div>
                             @endif
 
                             <div class="rating-block">
