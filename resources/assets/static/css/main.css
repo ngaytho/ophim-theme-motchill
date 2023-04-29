@@ -1290,7 +1290,7 @@ textarea.form-control {
 }
 
 .flickity-prev-next-button svg {
-  /*width: 40px;*/
+  width: 40px;
 }
 
 .flickity-prev-next-button .arrow {
@@ -2928,8 +2928,8 @@ textarea.form-control {
   }
 
   .flickity-prev-next-button {
-    width: 20px;
-    height: 40px;
+    width: 50px;
+    height: 60px;
   }
 
   .flickity-prev-next-button.previous {
