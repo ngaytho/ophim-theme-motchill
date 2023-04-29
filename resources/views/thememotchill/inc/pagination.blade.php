@@ -1,4 +1,24 @@
 @if ($paginator->hasPages())
+    <style>
+        #pagination {
+            display: block !important;
+        }
+        #pagination > li {
+            margin: 3px;
+            display: inline-block;
+        }
+        #pagination > li > .page-link,
+        #pagination > .page-item > span {
+            /*border-radius: 4px;*/
+            background: #444;
+            color: #fff;
+            border: 0;
+        }
+        #pagination > li.active > .page-link {
+            background: #222222 ;
+        }
+    </style>
+
     <ul id="pagination" class="pagination-list pagination">
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
