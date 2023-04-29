@@ -93,7 +93,7 @@
                                         : 'N/A' !!}
                                 </h6>
                                 {{-- <h6>Sắp Chiếu: <span>Tập 30 VietSub</span></h6> --}}
-                                <h6>
+                                <h6>Diễn viên:
                                     {!! count($currentMovie->actors)
                                         ? $currentMovie->actors->map(function ($actor) {
                                                 return '<a href="' . $actor->getUrl() . '" tite="Diễn viên ' . $actor->name . '"><span itemprop="actor">' . $actor->name . '</span></a>';
