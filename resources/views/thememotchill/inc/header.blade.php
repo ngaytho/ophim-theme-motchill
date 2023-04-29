@@ -83,7 +83,7 @@
                                 </ul>
                             </li>
                         @else
-                            <li class="{{ $item['link'] === '/' ? 'active' : 'hidden-sm' }}"><a title="{{ $item['name'] }}" href="{{ $item['link'] }}">{{ $item['name'] }}</a></li>
+                            <li class="{{ $item['link'] === '/' ? 'active' : 'hidden-sm' }}"><a {!! strpos($item['link'], 'bang-xep-hang') !== false ? 'class="color-orange"' : '' !!} title="{{ $item['name'] }}" href="{{ $item['link'] }}">{{ $item['name'] }}</a></li>
                         @endif
                     @endforeach
                 </ul>
