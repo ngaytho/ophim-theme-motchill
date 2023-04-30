@@ -52,6 +52,10 @@
             height: 50px;
         }
 
+        .flickity-prev-next-button svg {
+            vertical-align: middle !important;
+        }
+
         @media all and (min-width: 813px) {
             .m-nav, .m-nav-over {
                 display: none !important;
