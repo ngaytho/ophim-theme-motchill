@@ -258,12 +258,17 @@
 @endsection
 
 @push('scripts')
+    <script src="/themes/motchill/static/player/skin/juicycodes.js"></script>
+    <link href="/themes/motchill/static/player/skin/juicycodes.css" rel="stylesheet" type="text/css">
+
     <script src="/themes/motchill/static/player/js/p2p-media-loader-core.min.js"></script>
     <script src="/themes/motchill/static/player/js/p2p-media-loader-hlsjs.min.js"></script>
 
-    <script src="/js/jwplayer-8.9.3.js"></script>
+    <script src="/themes/motchill/static/player/jwplayer.js"></script>
+{{--    <script src="/js/jwplayer-8.9.3.js"></script>--}}
     <script src="/js/hls.min.js"></script>
     <script src="/js/jwplayer.hlsjs.min.js"></script>
+
 
     <script>
         var episode_id = {{ $episode->id }};
@@ -358,16 +363,16 @@
                     primary: "html5",
                     playbackRateControls: true,
                     playbackRates: [0.25, 0.75, 1, 1.25],
-                    sharing: {
-                        sites: [
-                            "reddit",
-                            "facebook",
-                            "twitter",
-                            "googleplus",
-                            "email",
-                            "linkedin",
-                        ],
-                    },
+                    // sharing: {
+                    //     sites: [
+                    //         "reddit",
+                    //         "facebook",
+                    //         "twitter",
+                    //         "googleplus",
+                    //         "email",
+                    //         "linkedin",
+                    //     ],
+                    // },
                     volume: 100,
                     mute: false,
                     logo: {
@@ -381,8 +386,17 @@
                         vpaidmode: "insecure",
                         skipoffset: {{ (int) Setting::get('jwplayer_advertising_skipoffset') ?: 5 }}, // Bỏ qua quảng cáo trong vòng 5 giây
                         skipmessage: "Bỏ qua sau xx giây",
-                        skiptext: "Bỏ qua"
-                    }
+                        skiptext: "Bỏ qua",
+                        admessage: "Quảng cáo còn xx giây."
+                    },
+                    tracks: [
+                        {
+                            "file": "/sub.vtt",
+                            "kind": "captions",
+                            label: "VN",
+                            default: "true"
+                        }
+                    ],
                 };
 
                 if (type == 'm3u8') {
