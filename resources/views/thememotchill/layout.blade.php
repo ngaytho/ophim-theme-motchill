@@ -2,6 +2,7 @@
 
 @php
     $menu = \Ophim\Core\Models\Menu::getTree();
+    $logo = setting('site_logo', '');
 @endphp
 
 @push('header') 
@@ -41,6 +42,12 @@
         #star i {
             color: orange
         }
+
+        @if ($logo)
+            .myui-header__logo .logo {
+                background: url({{ $logo }}) no-repeat;
+            }
+        @endif
     </style>
 @endpush
 

@@ -54,7 +54,7 @@ class ThemeMotchillServiceProvider extends ServiceProvider
                         'name' => 'movie_related_limit',
                         'label' => 'Movies related limit',
                         'type' => 'number',
-                        'value' => 18,
+                        'value' => 24,
                         'wrapperAttributes' => [
                             'class' => 'form-group col-md-4',
                         ],
@@ -83,6 +83,8 @@ class ThemeMotchillServiceProvider extends ServiceProvider
                         'hint' => 'Label|relation|find_by_field|value|sort_by_field|sort_algo|limit|show_template (top_text|top_thumb)',
                         'value' => <<<EOT
                         Bảng xếp hạng||is_copyright|0|view_week|desc|6|top_thumb
+                        Top phim lẻ||type|single|view_week|desc|6|top_thumb
+                        Top phim bộ||type|series|view_week|desc|6|top_thumb
                         EOT,
                         'attributes' => [
                             'rows' => 5
