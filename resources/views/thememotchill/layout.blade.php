@@ -60,9 +60,9 @@
 
         @media screen and (max-width: 800px) {
             .myui-header__logo .logo {
-                height: 50px;
-                width: 120px;
-                background-position: center center;
+                height: 50px !important;
+                width: 120px !important;
+                background-position: center center !important;
             }
         }
 
