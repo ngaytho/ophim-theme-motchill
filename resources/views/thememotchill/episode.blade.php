@@ -261,13 +261,13 @@
     <script src="/themes/motchill/static/player/skin/juicycodes.js"></script>
     <link href="/themes/motchill/static/player/skin/juicycodes.css" rel="stylesheet" type="text/css">
 
-{{--    <script src="/themes/motchill/static/player/js/p2p-media-loader-core.min.js"></script>--}}
-{{--    <script src="/themes/motchill/static/player/js/p2p-media-loader-hlsjs.min.js"></script>--}}
+    <script src="/themes/motchill/static/player/js/p2p-media-loader-core.min.js"></script>
+    <script src="/themes/motchill/static/player/js/p2p-media-loader-hlsjs.min.js"></script>
 
     <script src="/themes/motchill/static/player/jwplayer.js"></script>
 {{--    <script src="/js/jwplayer-8.9.3.js"></script>--}}
-{{--    <script src="/js/hls.min.js"></script>--}}
-{{--    <script src="/js/jwplayer.hlsjs.min.js"></script>--}}
+    <script src="/js/hls.min.js"></script>
+    <script src="/js/jwplayer.hlsjs.min.js"></script>
 
 
     <script>
@@ -428,18 +428,18 @@
                             // useP2P: false,
                         },
                     };
-                    // if (Hls.isSupported() && p2pml.hlsjs.Engine.isSupported()) {
-                    //     var engine = new p2pml.hlsjs.Engine(engine_config);
-                    //     player.setup(objSetup);
-                    //     jwplayer_hls_provider.attach();
-                    //     p2pml.hlsjs.initJwPlayer(player, {
-                    //         liveSyncDurationCount: segments_in_queue, // To have at least 7 segments in queue
-                    //         maxBufferLength: 300,
-                    //         loader: engine.createLoaderClass(),
-                    //     });
-                    // } else {
+                    if (Hls.isSupported() && p2pml.hlsjs.Engine.isSupported()) {
+                        var engine = new p2pml.hlsjs.Engine(engine_config);
                         player.setup(objSetup);
-                    // }
+                        jwplayer_hls_provider.attach();
+                        p2pml.hlsjs.initJwPlayer(player, {
+                            liveSyncDurationCount: segments_in_queue, // To have at least 7 segments in queue
+                            maxBufferLength: 300,
+                            loader: engine.createLoaderClass(),
+                        });
+                    } else {
+                        player.setup(objSetup);
+                    }
                 } else {
                     player.setup(objSetup);
                 }
