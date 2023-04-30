@@ -5168,7 +5168,7 @@ a.btn.btn-default.active {
     cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    /*display: flex;*/
   }
   .m-nav-open svg {
     width: 40px;
@@ -5178,8 +5178,11 @@ a.btn.btn-default.active {
 @media all and (max-width: 767px) {
   .m-nav-open {
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 20px;
+    /* left: 50%; */
+    /* top: 5px; */
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .acd-drop:after {
