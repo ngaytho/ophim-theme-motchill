@@ -107,7 +107,7 @@
                 data-link="{{ $server->link }}"
                 class="streaming-server current btn-sv btn btn-primary"
             >
-                Nguồn phát #{{ $loop->index }}
+                Server #{{ $loop->iteration }}
             </a>
         @endforeach
     </div>
