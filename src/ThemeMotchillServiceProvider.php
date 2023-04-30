@@ -137,7 +137,7 @@ class ThemeMotchillServiceProvider extends ServiceProvider
                                     <p><b><a href="/">Xem phim online</a></b> miễn phí chất lượng cao với phụ đề tiếng việt - thuyết minh -
                                         lồng tiếng. Mọt phim có nhiều thể loại phim phong phú, đặc sắc, nhiều bộ phim hay nhất - mới nhất.
                                     </p>
-                                    <p>Website motchill.net với giao diện trực quan, thuận tiện, tốc độ tải nhanh, thường xuyên cập nhật các
+                                    <p>Website motchill với giao diện trực quan, thuận tiện, tốc độ tải nhanh, thường xuyên cập nhật các
                                         bộ phim mới hứa hẹn sẽ đem lại những trải nghiệm tốt cho người dùng.</p>
                                 </div>
                             </div>
