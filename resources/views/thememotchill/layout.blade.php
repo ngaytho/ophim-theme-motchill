@@ -47,10 +47,21 @@
             color: orange
         }
 
+        .flickity-prev-next-button {
+            width: 40px;
+            height: 50px;
+        }
+
+        @media all and (min-width: 813px) {
+            .m-nav, .m-nav-over {
+                display: none !important;
+            }
+        }
+
         @if ($logo)
             .myui-header__logo .logo {
                 background: url({{ $logo }}) no-repeat;
-                background-position: center center;
+                /*background-position: center center;*/
                 font-size: 1.5em;
                 color: #fff !important;
                 font-weight: 700;
