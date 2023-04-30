@@ -50,6 +50,14 @@
         @if ($logo)
             .myui-header__logo .logo {
                 background: url({{ $logo }}) no-repeat;
+                font-size: 1.5em;
+                color: #fff !important;
+                font-weight: 700;
+                background-size: contain;
+                display: block;
+                width: 229px;
+                height: 60px;
+                text-indent: -9999px;
             }
         @endif
     </style>
