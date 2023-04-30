@@ -58,10 +58,17 @@
             }
         }
 
+        @media screen and (max-width: 800px) {
+            .myui-header__logo .logo {
+                height: 50px;
+                width: 120px;
+                background-position: center center;
+            }
+        }
+
         @if ($logo)
             .myui-header__logo .logo {
                 background: url({{ $logo }}) no-repeat;
-                /*background-position: center center;*/
                 font-size: 1.5em;
                 color: #fff !important;
                 font-weight: 700;
