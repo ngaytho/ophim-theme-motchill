@@ -3,6 +3,10 @@
 @php
     $menu = \Ophim\Core\Models\Menu::getTree();
     $logo = setting('site_logo', '');
+    preg_match( '@src="([^"]+)"@' , $logo, $match );
+
+    // will return /images/image.jpg
+    $logo = array_pop($match);
 @endphp
 
 @push('header') 
