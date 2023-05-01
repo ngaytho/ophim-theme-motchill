@@ -31,12 +31,17 @@ class ThemeMotchillServiceProvider extends ServiceProvider
                 'preview_image' => '',
                 'options' => [
                     [
-                        'name' => 'recommendations_limit',
-                        'label' => 'Recommended movies limit',
-                        'type' => 'number',
-                        'value' => 10,
-                        'wrapperAttributes' => [
-                            'class' => 'form-group col-md-4',
+                        'name' => 'recommendations',
+                        'label' => 'Phim đề cử',
+                        'type' => 'code',
+                        'hint' => 'display_label|find_by_field|value|limit|sort_by_field|sort_algo',
+                        'value' => <<<EOT
+                        Phim đề cử|is_recommended|1|10|view_week|desc
+                        Phim HOT|is_copyright|0|10|view_week|desc
+                        Phim ngẫu nhiên|random|random|10|view_week|desc
+                        EOT,
+                        'attributes' => [
+                            'rows' => 5
                         ],
                         'tab' => 'List'
                     ],
@@ -66,7 +71,8 @@ class ThemeMotchillServiceProvider extends ServiceProvider
                         'type' => 'code',
                         'hint' => 'display_label|relation|find_by_field|value|limit|show_more_url',
                         'value' => <<<EOT
-                        Phim chiếu rạp mới||is_shown_in_theater|1|24|/danh-sach/phim-chieu-rap
+                        Phim mới cập nhật||is_copyright|0|12|/danh-sach/phim-moi
+                        Phim chiếu rạp mới||is_shown_in_theater|1|12|/danh-sach/phim-chieu-rap
                         Phim bộ mới||type|series|12|/danh-sach/phim-bo
                         Phim lẻ mới||type|single|12|/danh-sach/phim-le
                         Phim hoạt hình|categories|slug|hoat-hinh|12|/the-loai/hoat-hinh

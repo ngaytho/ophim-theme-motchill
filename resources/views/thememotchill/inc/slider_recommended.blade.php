@@ -1,8 +1,9 @@
+@if ($recommendations)
 <div class="myui-top-movies">
-    <h2 class="myui-block-title mr-sm-10 color-orange">PHIM HOT</h2>
+    <h2 class="myui-block-title mr-sm-10 color-orange">{{ $recommendations['label'] }}</h2>
     <div class="flickity clearfix">
 
-        @foreach ($recommendations as $movie)
+        @foreach ($recommendations['data'] as $movie)
             <div class="col-lg-5 col-md-5 col-sm-4 col-xs-3">
                 <div class="myui-vodlist__box">
                     <a
@@ -25,3 +26,4 @@
         @endforeach
     </div>
 </div>
+@endif
