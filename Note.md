@@ -1,4 +1,3 @@
 # Update Note
 
-0. Compare `vendor/hacoidev/ophim-core/resources/views/themes/layout.blade.php` VS `resources/views/thememotchill/layout_core.blade.php`
-0. 
+1. Compare `vendor/hacoidev/ophim-core/resources/views/themes/layout.blade.php` VS `resources/views/thememotchill/layout_core.blade.php`
