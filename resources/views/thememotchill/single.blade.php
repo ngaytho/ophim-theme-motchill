@@ -14,6 +14,9 @@
             ->first()
             ->getUrl();
     }
+    if ($currentMovie->status == 'trailer') {
+        $watchUrl = 'javascript:alert("Phim đang được cập nhật!")';
+    }
 
     $tops = Cache::remember('site.movies.tops', setting('site_cache_ttl', 5 * 60), function () {
         $lists = preg_split('/[\n\r]+/', get_theme_option('hotest'));
