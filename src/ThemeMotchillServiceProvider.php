@@ -86,8 +86,9 @@ class ThemeMotchillServiceProvider extends ServiceProvider
                         'name' => 'hotest',
                         'label' => 'Danh sách hot',
                         'type' => 'code',
-                        'hint' => 'Label|relation|find_by_field|value|sort_by_field|sort_algo|limit|show_template (top_text|top_thumb)',
+                        'hint' => 'Label|relation|find_by_field|value|sort_by_field|sort_algo|limit|show_template (top_thumb|top_trending)',
                         'value' => <<<EOT
+                        Trending|trending|||||6|top_trending
                         Top phim lẻ||type|single|view_week|desc|6|top_thumb
                         Top phim bộ||type|series|view_week|desc|6|top_thumb
                         Bảng xếp hạng||is_copyright|0|view_week|desc|6|top_thumb
