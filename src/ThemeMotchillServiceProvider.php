@@ -165,6 +165,13 @@ class ThemeMotchillServiceProvider extends ServiceProvider
                         'type' => 'code',
                         'value' => '',
                         'tab' => 'Ads'
+                    ],
+                    [
+                        'name' => 'show_fb_comment_in_single',
+                        'label' => 'Show FB Comment In Single',
+                        'type' => 'boolean',
+                        'value' => false,
+                        'tab' => 'FB Comment'
                     ]
                 ],
             ]

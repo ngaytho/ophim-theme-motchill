@@ -157,6 +157,60 @@
                     </div>
                 </div>
 
+                @if (get_theme_option('show_fb_comment_in_single'))
+                <div class="myui-panel myui-panel-bg clearfix">
+                    <style>
+                        @media only screen and (max-width: 767px) {
+                            .fb-comments {
+                                width: 100% !important
+                            }
+
+                            .fb-comments iframe[style] {
+                                width: 100% !important
+                            }
+
+                            .fb-like-box {
+                                width: 100% !important
+                            }
+
+                            .fb-like-box iframe[style] {
+                                width: 100% !important
+                            }
+
+                            .fb-comments span {
+                                width: 100% !important
+                            }
+
+                            .fb-comments iframe span[style] {
+                                width: 100% !important
+                            }
+
+                            .fb-like-box span {
+                                width: 100% !important
+                            }
+
+                            .fb-like-box iframe span[style] {
+                                width: 100% !important
+                            }
+                        }
+
+                        .fb-comments,
+                        .fb-comments span {
+                            background-color: #eee
+                        }
+
+                        .fb-comments {
+                            margin-bottom: 20px
+                        }
+                    </style>
+                    <div style="color:red;font-weight:bold;padding:5px">
+                        Lưu ý các bạn không nên nhấp vào các đường link ở phần bình luận, kẻ gian có thể đưa virut vào thiết bị hoặc hack mất facebook của các bạn.
+                    </div>
+                    <div data-order-by="reverse_time" id="commit-99011102" class="fb-comments" data-href="{{ $currentMovie->getUrl() }}" data-width="" data-numposts="10"></div>
+                    <script>document.getElementById("commit-99011102").dataset.width = $("#commit-99011102").parent().width();</script>
+                </div>
+                @endif
+
                 <div class="myui-panel myui-panel-bg clearfix">
                     <div class="myui-panel-box clearfix">
                         <div class="myui-panel__head active bottom-line clearfix">
